@@ -1,11 +1,16 @@
 body {
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+    /* Barbara: voy a poner la fuente  y el color del texto por defecto */
 }
 .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
     position: fixed;
+    z-index: 1;
+    /*Bárbara: Voy a poner un "z-index: 1" para que el nav-bar se quede por encima del triangulo decorativo de la secion "strengths and weaknesses"  */
 
 }
 .logo-box {
@@ -159,6 +164,7 @@ body {
 
 a {
     text-decoration-line: none;
+    color: #54585a;
 }
 
 .disclaimer {
