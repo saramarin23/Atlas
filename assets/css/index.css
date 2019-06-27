@@ -1,1 +1,77 @@
+body {
+    margin: 0px;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
 
+}
+.logo-box {
+    background: #099d8d;
+    height: 60px;
+    opacity: 0.95;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-atlas-mobile {
+    height: 50px;
+    width: auto;
+}
+.logo-atlas-desktop {
+    display: none;
+}
+.index-list {
+    display: flex;
+    background: #14d9c4;
+    height: 45px;
+    opacity: 0.9;
+    color: white;
+    font-family:'Rubik', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+.index-item {
+    display: inline;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+@media all and (min-width:768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        background:  #099d8d;
+        opacity: 0.95;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .index-list {
+        background: transparent;
+        height: 60px; 
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 14px 45px 16px 0;
+        padding: 0px;
+        font-weight: lighter;
+    }
+    .logo-box {
+        padding: 0px 0px 0px 15px;
+        background: transparent;
+    }
+    .logo-atlas-mobile {
+        display: none;
+    }
+    .logo-atlas-desktop {
+        display: block;
+        height: 50px;
+        width: auto;
+    }
+}
