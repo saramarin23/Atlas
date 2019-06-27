@@ -75,3 +75,42 @@ body {
         width: auto;
     }
 }
+
+
+/* FOOTER STYLE */
+
+.footer {
+    margin: 10px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-nav {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.disclaimer {
+    margin: 20px 0 20px 0;
+    color: #b8b8b9;
+    font-size: 0.9rem;
+}
+
+.footer-image {
+    width: 115.9px;
+    height: 45px;
+}
+
+/* FOOTER STYLE */
+
+
