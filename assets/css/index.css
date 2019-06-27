@@ -76,6 +76,67 @@ body {
     }
 }
 
+/* TEAM STYLE */
+
+body {
+    margin: 0px;
+}
+
+.team, .str_wea {
+    text-align: center;
+    padding: 30px;
+}
+
+.str_wea{
+    background-color: #f1f1f1;
+}
+
+.team_title {
+    color: #14d9c4;
+    font-family: 'Rubik', sans-serif;
+    margin: 15px;
+}
+
+.atlas_text {
+    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+}
+
+.s_w__title {
+    color: #099d8b;
+    font-family: 'Rubik', sans-serif;
+    margin: 15px;
+}
+
+.str_wea__strengths, .str_wea__weaknesses {
+    display: block;
+    flex: 50%;
+    padding-bottom: 30px;
+}
+
+.team::after {
+    content: "";
+    position: relative;
+    top: 67px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+
+@media all and (min-width:768px){
+    main .team {
+        padding: 30px 70px 30px 70px;
+    }
+    .str_wea{
+        display: flex;
+        /* width: 100%; */
+        flex-direction: row;
+    }
+    .str_wea__strengths, .str_wea__weaknesses, .team {
+        padding: 0 40px;
+    }
+}
+
 
 /* FOOTER STYLE */
 
