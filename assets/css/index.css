@@ -81,6 +81,73 @@ body {
     }
 }
 
+/*HERO*/
+
+.hero-image {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url("code.jpg");
+        background-size: cover;
+        height: 421px;
+}
+
+.quote-box  {
+        display: block;
+        position: relative;
+        height: 80px;
+        width: 90%;
+        top: 60px;
+        background-color:white;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+
+.quote {
+        display: block;
+        font-size: 16px;
+        font-family: 'OpenSans', sans-serif;
+        color: black;
+        text-align: center;
+        line-height: 1.5;
+}
+
+@media all and (min-width: 768px) {
+        .quote-box {
+                height: 80px;
+                width: 500px;
+                top: 0px;
+                opacity: 0.8;
+                left: -13%;
+                
+        }
+        .quote {
+                margin: 15px;
+                font-size: 18px;
+                line-height: 1.25;
+        }
+}
+
+@media all and (min-width: 1200px) {
+        .quote-box {
+                height: 90px;
+                width: 600px;
+                top: 0px;
+                opacity: 0.8;
+                
+        }
+        
+        .quote {
+                top: 0;
+                margin: 15px;
+                font-size: 24px;
+
+        }
+}
+
+
 /* TEAM STYLE */
 
 body {
