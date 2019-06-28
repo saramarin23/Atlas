@@ -237,7 +237,7 @@ body {
 .info-bar{
     display: flex;
     text-align: justify;
-    padding: 0.19rem;
+    padding: 0.8rem;
 }
 .banner_media-bar{ /*Barra de redes sociales*/
     display: flex;
@@ -271,7 +271,7 @@ body {
 .info-maria{
     display: flex;
     text-align: justify;
-    padding: 0.19rem;
+    padding: 0.8rem;
 }
 
 .link_media-bar{/*Color de los enlaces de la barra de redes*/
@@ -297,7 +297,7 @@ body {
 .info-sara{
     display: flex;
     text-align: justify;
-    padding: 0.19rem;
+    padding: 0.8rem;
 }
 .ada-luz{/*tarjeta luz*/
     width: 100%;
@@ -319,7 +319,7 @@ body {
 .info-luz{
     display: flex;
     text-align: justify;
-    padding: 0.19rem;
+    padding: 0.8rem;
 }
 .ada-mar{/*tarjeta mar*/
     width: 100%;
@@ -341,7 +341,7 @@ body {
 .info-mar{
     display: flex;
     text-align: justify;
-    padding: 0.19rem;
+    padding: 0.8rem;
 }
 
 /* FOOTER STYLE */
