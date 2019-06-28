@@ -88,7 +88,7 @@ body {
         position: relative;
         justify-content: center;
         align-items: flex-end;
-        background-image: url("code.jpg");
+        background-image: url("assets/images/code.jpg");
         background-size: cover;
         height: 421px;
 }
