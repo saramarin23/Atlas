@@ -341,6 +341,7 @@ body {
 .info-mar{
     display: flex;
     text-align: justify;
+    padding: 0.19rem;
 }
 
 /* FOOTER STYLE */
