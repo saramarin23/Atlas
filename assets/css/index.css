@@ -4,7 +4,7 @@ body {
     color: #54585a;
     /* Barbara: voy a poner la fuente  y el color del texto por defecto */
 }
-.nav-menu {
+.nav {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -13,7 +13,7 @@ body {
     /*Bárbara: Voy a poner un "z-index: 1" para que el nav-bar se quede por encima del triangulo decorativo de la secion "strengths and weaknesses"  */
 
 }
-.logo-box {
+.nav--nav--logo {
     background: #099d8d;
     height: 60px;
     opacity: 0.95;
@@ -28,7 +28,7 @@ body {
 .logo-atlas-desktop {
     display: none;
 }
-.index-list {
+.nav--index--list {
     display: flex;
     background: #14d9c4;
     height: 45px;
@@ -40,7 +40,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.index-item {
+.nav--index--list--item {
     display: inline;
     letter-spacing: normal;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ body {
 }
 
 @media all and (min-width:768px) {
-    .nav-menu {
+    .nav {
         display: flex;
         flex-direction: row;
         background:  #099d8d;
@@ -56,7 +56,7 @@ body {
         width: 100vw;
         justify-content: space-between;
     }
-    .index-list {
+    .nav--index--list {
         background: transparent;
         height: 60px; 
         display: flex;
@@ -67,7 +67,7 @@ body {
         padding: 0px;
         font-weight: lighter;
     }
-    .logo-box {
+    .nav--nav--logo {
         padding: 0px 0px 0px 15px;
         background: transparent;
     }
@@ -83,7 +83,7 @@ body {
 
 /*HERO*/
 
-.hero-image {
+.hero {
         display: flex;
         position: relative;
         justify-content: center;
@@ -105,7 +105,7 @@ body {
         margin-right: 20px;
 }
 
-.quote {
+.quote-box--quote {
         display: block;
         font-size: 16px;
         font-family: 'OpenSans', sans-serif;
@@ -123,7 +123,7 @@ body {
                 left: -13%;
                 
         }
-        .quote {
+        .quote-box--quote {
                 margin: 15px;
                 font-size: 18px;
                 line-height: 1.25;
@@ -139,7 +139,7 @@ body {
                 
         }
         
-        .quote {
+        .quote-box--quote {
                 top: 0;
                 margin: 15px;
                 font-size: 24px;
@@ -163,24 +163,24 @@ body {
     background-color: #f1f1f1;
 }
 
-.team_title {
+.team-title {
     color: #14d9c4;
     font-family: 'Rubik', sans-serif;
     margin: 15px;
 }
 
-.atlas_text {
+.atlas-text {
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
 
-.s_w__title {
+.str-wea--strengths--title {
     color: #099d8b;
     font-family: 'Rubik', sans-serif;
     margin: 15px;
 }
 
-.str_wea__strengths, .str_wea__weaknesses {
+.str-wea--strengths, .str-wea--weaknesses {
     display: block;
     flex: 50%;
     padding-bottom: 30px;
@@ -204,12 +204,12 @@ body {
         /* width: 100%; */
         flex-direction: row;
     }
-    .str_wea__strengths, .str_wea__weaknesses, .team {
+    .str-wea--strengths, .str-wea--weaknesses, .team {
         padding: 0 40px;
     }
 }
 /*ABOUT US STYLE*/
-.headline-name{
+.about-us--headline-name{
     font-size: 1.5rem;
     text-align: center;
     color: #099d8d;
