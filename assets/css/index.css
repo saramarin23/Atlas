@@ -2,7 +2,6 @@ body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
-    /* Barbara: voy a poner la fuente  y el color del texto por defecto */
 }
 .nav {
     display: flex;
@@ -10,8 +9,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 1;
-    /*Bárbara: Voy a poner un "z-index: 1" para que el nav-bar se quede por encima del triangulo decorativo de la secion "strengths and weaknesses"  */
-    
+        
 }
 .nav--logo {
     background: #099d8d;
@@ -45,17 +43,18 @@ body {
     letter-spacing: normal;
     text-transform: uppercase;
     line-height: 2;
-    
-}
+    }
 
 a {
     text-decoration-line: none;
     color: #54585a;
 }
 
-.nav--index--list--item a {
+.nav--index--list--item--link {
     color: white;
 }
+
+
 
 @media all and (min-width:768px) {
     .nav {
@@ -261,7 +260,7 @@ a {
     margin: 0.5rem;
 }
 
-.link_media-bar{
+.link-media-bar{
     /*Color de los enlaces de la barra de redes*/
     color: #099d8d;
 }
