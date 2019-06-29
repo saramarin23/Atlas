@@ -54,8 +54,6 @@ a {
     color: white;
 }
 
-
-
 @media all and (min-width:768px) {
     .nav {
         display: flex;
@@ -201,7 +199,7 @@ a {
     main .team {
         padding: 30px 70px 30px 70px;
     }
-    .str_wea{
+    .str-wea{
         display: flex;
         /* width: 100%; */
         flex-direction: row;
@@ -297,4 +295,13 @@ a {
 
 /* FOOTER STYLE */
 
+/* Fix position of linked content of the navs */
 
+.team-title, .about-us {
+    position: relative;
+}
+
+.fix-link-position {
+    position: absolute;
+    top: -8rem;
+}
