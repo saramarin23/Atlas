@@ -50,7 +50,7 @@ a {
     color: #54585a;
 }
 
-.nav--index--list--item--link {
+.nav--index--list--item a {
     color: white;
 }
 
@@ -297,7 +297,7 @@ a {
 
 /* Fix position of linked content of the navs */
 
-.team-title, .about-us {
+.team-title, .about-us--headline-name {
     position: relative;
 }
 
