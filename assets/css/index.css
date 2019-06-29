@@ -177,11 +177,6 @@ a {
     margin: 2rem;
 }
 
-.atlas-text {
-    font-family: 'Open Sans', sans-serif;
-    color: #54585a;
-}
-
 .str-wea--strengths--title {
     color: #099d8b;
     font-family: 'Rubik', sans-serif;
@@ -251,7 +246,6 @@ a {
 .about-us--info--text{
     display: flex;
     text-align: justify;
-    /* padding: 0.8rem; */
     text-align: center;
 }
 .banner_media-bar{ 
