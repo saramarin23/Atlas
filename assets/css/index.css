@@ -217,29 +217,6 @@ a {
     font-family: 'Rubik', sans-serif;
 }
 
-/*Tarjetas*/
-.about-us--info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-us--info--pic{
-    width: 11.25rem;
-    height: 11.25rem;
-    border-radius: 90px;
-    border: 0.19rem solid rgba(0, 0, 0, 0.08);
-}
-.about-us--info--name{
-    display: flex;
-    color: #14d9c4;
-    text-align: center;
-}
-.about-us--info--text{
-    display: flex;
-    text-align: justify;
-    text-align: center;
-}
 .banner_media-bar{ 
     /*Barra de redes sociales*/
     display: flex;
@@ -248,15 +225,52 @@ a {
     list-style: none;
     padding-inline-start: 0;
     color:  #099d8d;
+    margin-top: -0.3rem;
 }
-.social-bar{
-    margin: 0.5rem;
-}
-
 .link-media-bar{
     /*Color de los enlaces de la barra de redes*/
     color: #099d8d;
 }
+.social-bar{/*Espaciado entre los items barra redes*/
+    margin: 0.3rem;
+}
+/*Tarjetas*/
+.about-us--info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.4rem;
+    max-width: 48rem;
+}
+@media all and (min-width:48rem) {
+    .about-us--info{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .social-bar{
+        align-self: flex-end;
+    }
+}
+
+.about-us--info--pic{
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 90px;
+    border: 0.19rem solid rgba(0, 0, 0, 0.08);
+    margin-top: 0.5rem;
+}
+.about-us--info--name{
+    color: #14d9c4;
+    text-align: justify;
+}
+.about-us--info--text{
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+
 
 /* FOOTER STYLE */
 
