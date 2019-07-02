@@ -312,7 +312,6 @@ a {
         margin-right: 2rem;
         width: 100%;
         height: auto;
-
     }
     .about-us--info--name{
         align-self: flex-start;
@@ -320,7 +319,17 @@ a {
     }
 }
 @media all and (min-width:1200px){
-
+    .about-us--info--pic{
+        max-width: 17.38rem;/*278px*/
+        max-height: 17.38rem;
+        border-radius: 195px;
+        border: 0.19rem solid #b8b8b9;
+        margin: 1rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
 
