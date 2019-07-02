@@ -173,6 +173,7 @@ a {
     color: #099d8b;
     font-family: 'Rubik', sans-serif;
     margin: 15px;
+    letter-spacing: 0.1rem;
 }
 
 .str-wea--strengths, .str-wea--weaknesses {
@@ -236,19 +237,36 @@ a {
 .social-bar{/*Espaciado entre los items barra redes*/
     margin: 0.3rem;
 }
-/*Tarjetas*/
+
 .about-us--info {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0.4rem;
-    max-width: 48rem;
 }
-.about-us--barbara{
+.about-us--info--pic{
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 90px;
+    border: 0.19rem solid #b8b8b9;
+    margin-top: 0.5rem;
+}
+.about-us--info--name{
+    color: #14d9c4;
+    text-align: justify;
+}
+.about-us--info--text{
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+.about-us--barbara{/*Tarjetas*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .about-us--maria{
     display: flex;
@@ -270,39 +288,41 @@ a {
     flex-direction: column;
     align-items: center;
 }
-@media all and (min-width:48rem) {
+@media all and (min-width:768px) {/*Responsive*/
     .about-us--info{
         display: flex;
         flex-flow: row nowrap;
+        width: 100%;
     }
     .about-us--info--text{
-        text-align: justify;
+        text-align: left;
+        line-height: 1.7rem; 
+        width: 100%;
     }
     .banner_media-bar{
         align-self: flex-start;
+        width: 100%;
+    }
+    .about-us--info--pic{
+        max-width: 12.81rem;/*205px*/
+        max-height: 12.81rem;
+        border-radius: 125px;
+        border: 0.19rem solid #b8b8b9;
+        margin: 1rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: auto;
+
+    }
+    .about-us--info--name{
+        align-self: flex-start;
+        width: 100%;
     }
 }
 @media all and (min-width:1200px){
-    
+
 }
 
-.about-us--info--pic{
-    width: 11.25rem;
-    height: 11.25rem;
-    border-radius: 90px;
-    border: 0.19rem solid rgba(0, 0, 0, 0.08);
-    margin-top: 0.5rem;
-}
-.about-us--info--name{
-    color: #14d9c4;
-    text-align: justify;
-}
-.about-us--info--text{
-    display: flex;
-    text-align: justify;
-    text-align: center;
-    margin-top: -0.5rem;
-}
 
 
 /* FOOTER STYLE */
