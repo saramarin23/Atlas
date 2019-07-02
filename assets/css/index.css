@@ -191,7 +191,7 @@ a {
   }
 
 @media all and (min-width:768px){
-    main .team {
+    main.team {
         padding: 30px 70px 30px 70px;
     }
     .str-wea{
@@ -222,10 +222,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    justify-items: center;
     list-style: none;
     padding-inline-start: 0;
     color:  #099d8d;
     margin-top: -0.3rem;
+    max-width: 124px;
 }
 .link-media-bar{
     /*Color de los enlaces de la barra de redes*/
@@ -243,14 +245,45 @@ a {
     margin-top: 0.4rem;
     max-width: 48rem;
 }
+.about-us--barbara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us--maria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us--sara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us--luz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us--mar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media all and (min-width:48rem) {
     .about-us--info{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
     }
-    .social-bar{
-        align-self: flex-end;
+    .about-us--info--text{
+        text-align: justify;
     }
+    .banner_media-bar{
+        align-self: flex-start;
+    }
+}
+@media all and (min-width:1200px){
+    
 }
 
 .about-us--info--pic{
