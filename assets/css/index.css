@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
+
 .nav {
     display: flex;
     flex-direction: column;
