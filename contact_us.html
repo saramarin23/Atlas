@@ -45,10 +45,24 @@
         </div>
         <form action="/signup" method="post">
             <label for=""></label>
+        </form> 
+            <input type="text" id="fullname" name="fullname" placeholder="Nombre..." required="">
+            <div class="form-tel-mail">
+                <div class="form-mail">
+                    <label class="labelform" for="email">Email</label> <span class="asterisk">*</span>
+
+                    <input type="email" id="email" name="email" placeholder="nombre.apellidos@mail.com" required="">
+                </div>
+                <div class="form-tel">
+                    <label class="labelform labeltel" for="telephone">Teléfono</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ej: 123456789">
+                </div>
+            </div>
+            <label class="labelform" for="message">Mensaje</label> <span class="asterisk">*</span>
+
+            <textarea name="message" id="message" rows="10" cols="30">¿Qué necesitas?</textarea>
+            <input class="button" type="submit" value="Enviar">
         </form>
-        
-
-
     </main>
 </body>
 </html>

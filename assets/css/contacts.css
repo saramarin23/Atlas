@@ -3,8 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
-.na
-
 .nav {
     display: flex;
     flex-direction: column;
@@ -13,6 +11,7 @@ body {
     z-index: 1;
         
 }
+
 .nav--logo {
     background: #099d8d;
     height: 60px;
