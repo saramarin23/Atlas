@@ -83,8 +83,9 @@ a {
     }
     .logo-atlas-desktop {
         display: block;
-        height: 50px;
+        height: 45px;
         width: auto;
+        padding: 15px 0px 15px 45px;
     }
 }
 
