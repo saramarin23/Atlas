@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/contacts.css">
+    <title>Atlas Contact</title>
 </head>
 <body>
-    <main>
-
+    <header>
+        <nav class="nav">
+            <div class="nav--logo">
+                <a href="#hero"><img src="assets/images/logo-atlas-mobile.png" class="logo-atlas-mobile"></a>
+                <a href="#hero"><img src="assets/images/logo-atlas-desktop.png" class="logo-atlas-desktop"></a>
+            </div>
+            <div class="nav--index">
+                <ul class="nav--index--list">
+                    <li class="nav--index--list--item">
+                        <a href="#team">Equipo</a>
+                    </li>
+                    <li class="nav--index--list--item">
+                        <a href="#about-us">Quienes somos</a>
+                    </li>
+                    <li class="nav--index--list--item">
+                        <a href="#hero-contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero" id="hero-contact">
+            <div class="quote-box">
+                <p class="quote-box--quote"><strong>When you reach the top, keep climbing. <br> - Japanese proverb</strong></p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contact">
+            <h1 class="contact--title">Contact</h1>
+            <p class="contact--description">Si quieres contactarnos blá</p>
+            <small class="contact--instructions">
+                Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.
+            </small>
+        </div>
         <form action="/signup" method="post">
             <label class="labelform" for="fullname">Nombre completo</label> <span class="asterisk">*</span>
 
@@ -29,7 +63,6 @@
             <textarea name="message" id="message" rows="10" cols="30">¿Qué necesitas?</textarea>
             <input class="button" type="submit" value="Enviar">
         </form>
-
     </main>
 </body>
 </html>
