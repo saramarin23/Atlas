@@ -17,7 +17,7 @@ body {
     height: 60px;
     opacity: 0.95;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .logo-atlas-mobile {
