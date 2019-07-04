@@ -7,9 +7,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: fixed;
     z-index: 1;
         
 }
+
 .nav--logo {
     background: #099d8d;
     height: 60px;
@@ -60,7 +62,6 @@ a {
     /* position: relative; */
     justify-content: center;
     align-items: flex-end;
-    background-image: ;
     background-size: cover;
     height: 421px;
 }
@@ -129,7 +130,8 @@ a {
     }
     .logo-atlas-desktop {
         display: block;
-        height: 50px;
+        height: 45px;
         width: auto;
+        padding: 15px 0px 15px 45px;
     }
 }

@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
+
 .nav {
     display: flex;
     flex-direction: column;
@@ -83,8 +84,9 @@ a {
     }
     .logo-atlas-desktop {
         display: block;
-        height: 50px;
+        height: 45px;
         width: auto;
+        padding: 15px 0px 15px 45px;
     }
 }
 
@@ -189,7 +191,9 @@ a {
     border-width: 20px;
     border-style: solid;
     border-color: white transparent transparent transparent;
-  }
+}
+
+
 
 @media all and (min-width:768px){
     main.team {
@@ -203,12 +207,23 @@ a {
     .str-wea--strengths, .str-wea--weaknesses, .team {
         padding: 0 40px;
     }
+    .team::after {
+        content: "";
+        position: relative;
+        top: 41px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+    }
 }
 
 /*ABOUT US STYLE*/
 
 .about-us{
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .about-us--headline-name{
@@ -239,11 +254,11 @@ a {
 }
 
 .about-us--info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0.4rem;
+    justify-items: center;
 }
 .about-us--info--pic{
     width: 11.25rem;
@@ -262,36 +277,17 @@ a {
     text-align: center;
     margin-top: -0.5rem;
 }
-.about-us--barbara{/*Tarjetas*/
+.about-us--content{/*Tarjetas*/
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.about-us--maria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-us--sara{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-us--luz{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-us--mar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 @media all and (min-width:768px) {/*Responsive*/
     .about-us--info{
         display: flex;
-        flex-flow: row nowrap;
+        flex-direction: row;
         width: 100%;
     }
     .about-us--info--text{
@@ -318,6 +314,7 @@ a {
         width: 100%;
     }
 }
+
 @media all and (min-width:1200px){
     .about-us--info--pic{
         max-width: 15.63rem;/*278px*/
@@ -330,14 +327,20 @@ a {
         height: auto;
         transition: 2s ease;
     }
-    .about-us--barbara, .about-us--luz, .about-us--maria, .about-us--sara, .about-us--mar{
-        align-self: flex-start;
-        margin-top: 2rem;
-    }
     .about-us--info--pic:hover{
         transform: translateY(-40px) scale(1.1);
     }
-
+    .zigzag :nth-of-type(even) {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+      }
+    .luz{
+        text-align: right;
+    }
+    .maria{
+        align-self: flex-end;
+    }
+}
 
 /* FOOTER STYLE */
 
