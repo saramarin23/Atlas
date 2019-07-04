@@ -1,0 +1,27 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "Proyecto m1 grupo 3 tarde",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saramarin23/Atlas.git"
+  },
+  "keywords": [
+    "atlas",
+    "adalab"
+  ],
+  "author": "grupo3tarde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saramarin23/Atlas/issues"
+  },
+  "homepage": "https://github.com/saramarin23/Atlas#readme"
+}
