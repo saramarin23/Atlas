@@ -53,6 +53,53 @@ a {
     color: white;
 }
 
+/* HERO */
+
+.hero {
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: flex-end;
+    background-image: ;
+    background-size: cover;
+    height: 421px;
+}
+
+/* MAIN */
+
+.contact--title {
+    color: #099d8d;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.contact--description {
+    margin: 15px;
+}
+
+.asterisk {
+    color: #14d9c4;
+}
+
+.contact {
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 15px 30px 15px;
+}
+
+.input {
+    margin: 5px 0px 15px 0px;
+}
+
 @media all and (min-width:768px) {
     .nav {
         display: flex;
