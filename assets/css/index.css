@@ -94,7 +94,7 @@ a {
 
 .hero-image {
     display: flex;
-    background: url("code.jpg");
+    background: url("../images/code.jpg");
     background-size: cover;
     width: 100vw;
     height: 421px;
