@@ -103,7 +103,7 @@ a {
 .quote-box {
     display: flex;
     position: relative;
-    top: 421px;
+    top: 210px;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ a {
     position: absolute;
     text-align: center;
     background-color: white;
-    width: 260px;
+    width: 300px;
     padding: 15px;
     font-size: 18px;
     margin: 0;
