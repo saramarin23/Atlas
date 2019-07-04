@@ -90,60 +90,65 @@ a {
 
 /*HERO*/
 
-.hero {
+.hero-image {
     display: flex;
-    /* position: relative; */
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url("../images/code.jpg");
+    background: url("code.jpg");
     background-size: cover;
+    width: 100vw;
     height: 421px;
 }
 
-.quote-box  {
+.quote-box {
+    display: flex;
     position: relative;
-    height: 80px;
-    width: 90%;
-    top: 60px;
-    background-color:white;
+    top: 421px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.quote-box--quote {
-    font-size: 16px;
-    font-family: 'OpenSans', sans-serif;
-    color: black;
+.quote-box-quote {
+    position: absolute;
     text-align: center;
-    line-height: 1.5;
+    background-color: white;
+    width: 260px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
 }
 
 @media all and (min-width: 768px) {
     .quote-box {
-        width: 500px;
-        height: 80px;
-        top: 0px;
-        opacity: 0.8;
-        left: -13%;
+            top: 171px;
     }
 
-    .quote-box--quote {
-        margin: 15px;
-        font-size: 18px;
-        line-height: 1.25;
+    .quote-box-quote {
+            opacity: 0.8;
+            width: 341px;
+            height: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            left: 76px;    
+            line-height: 25px;
+            text-align: left;
     }
 }
 
 @media all and (min-width: 1200px) {
     .quote-box {
-        height: 90px;
-        width: 600px;
-        top: 0px;
-        opacity: 0.8;
+            top: 167px;
     }
-        
-    .quote-box--quote {
-        top: 0;
-        margin: 15px;
-        font-size: 24px;
+
+    .quote-box-quote {
+            width: 454px;
+            height: 60px;
+            padding-left: 60px;
+            padding-right: 60px;  
+            left: 100vw;
+            font-size: 24px;
+            line-height: 30px;
+            transform: translate(-90vw,0);      
+            transition: transform 1s ease-out;
     }
 }
 
