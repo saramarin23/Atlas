@@ -168,8 +168,38 @@ input::placeholder {
         width: auto;
         padding: 15px 0px 15px 45px;
     }
-
     .form {
         max-width: 442px;
+        
+    }
+    .button {
+        width: 206px;
+        align-self: flex-end;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .form {
+        max-width: 601px;
+        margin-bottom: 90px;
+        padding: 0;
+    }
+
+    .form-mail-tel {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .form-mail {
+        display: flex;
+        flex-direction: column;
+        width: 395px;
+    }
+
+    .form-tel {
+        display: flex;
+        flex-direction: column;
+        width: 162px;
     }
 }
