@@ -103,6 +103,9 @@ a {
 
 .input {
     margin: 5px 0px 15px 0px;
+    color: #b8b8b9;
+    border: 1px solid #b8b8b9;
+    border-radius: 5px;
 }
 
 .button {
@@ -110,8 +113,8 @@ a {
     margin: 30px 0;
     height: 45px;
     color: #fff;
-    border: none;
     border-radius: 5px;
+    width: 100%;
 }
 
 #message {
@@ -119,7 +122,7 @@ a {
     margin-top: 5px;
     color: #b8b8b9;
     height: 105px;
-
+    border-radius: 5px;
 }
 
 .form .input{
@@ -164,5 +167,9 @@ input::placeholder {
         height: 45px;
         width: auto;
         padding: 15px 0px 15px 45px;
+    }
+
+    .form {
+        max-width: 442px;
     }
 }
