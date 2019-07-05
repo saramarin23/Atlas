@@ -79,6 +79,11 @@ a {
 
 .contact--description {
     margin: 15px;
+    text-align: center;
+}
+
+.contact--instructions {
+    text-align: center;
 }
 
 .asterisk {
@@ -108,6 +113,13 @@ a {
     border-radius: 5px;
 }
 
+textarea:focus,
+.input:focus,
+.button:focus {
+    border: 1px solid #14d9c4;
+    outline: 0;
+}
+
 .button {
     background-color: #099d8d;
     margin: 30px 0;
@@ -115,6 +127,7 @@ a {
     color: #fff;
     border-radius: 5px;
     width: 100%;
+    
 }
 
 #message {
@@ -168,10 +181,12 @@ input::placeholder {
         width: auto;
         padding: 15px 0px 15px 45px;
     }
-    .form {
+
+    .main {
         max-width: 442px;
-        
+        margin: 0 auto;
     }
+
     .button {
         width: 206px;
         align-self: flex-end;
@@ -179,8 +194,14 @@ input::placeholder {
 }
 
 @media all and (min-width: 1200px) {
-    .form {
+    
+    .main {
         max-width: 601px;
+        margin: 0 auto;
+    }
+    
+    .form {
+        
         margin-bottom: 90px;
         padding: 0;
     }
