@@ -350,7 +350,7 @@ a {
         text-align: right;
     }
     .maria{
-        align-self: flex-end;
+        align-self: right;
     }
 }
 
