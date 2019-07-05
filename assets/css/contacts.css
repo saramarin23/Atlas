@@ -95,6 +95,7 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 30px 15px 30px 15px;
+    margin: 0 auto;
 }
 
 .input {
