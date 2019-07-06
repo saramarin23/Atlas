@@ -260,9 +260,22 @@ a {
 .link-media-bar{
     /*Color de los enlaces de la barra de redes*/
     color: #099d8d;
+    transition: 0.5s ease;
 }
 .social-bar{/*Espaciado entre los items barra redes*/
     margin: 0.3rem;
+}
+/* .far{
+    transition: 0.5s ease;
+}
+.fab{
+    transition: 0.5s ease;
+}
+.far :hover{
+    color: #14d9c4
+} */
+.link-media-bar :hover{
+    color: #14d9c4
 }
 
 .about-us--info {
