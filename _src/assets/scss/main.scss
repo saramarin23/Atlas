@@ -1,0 +1,447 @@
+/* @import 'core/settings';
+@import 'core/links';
+
+body {
+	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
+	margin: 0;
+	height: 100vh;
+}
+ HASTA AQUI LO DE ADALAB*/
+ body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+        
+}
+.nav--logo {
+    background: #099d8d;
+    height: 60px;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-atlas-mobile {
+    height: 50px;
+    width: auto;
+}
+.logo-atlas-desktop {
+    display: none;
+}
+.nav--index--list {
+    display: flex;
+    background: #14d9c4;
+    height: 45px;
+    opacity: 0.9;
+    
+    font-family:'Rubik', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav--index--list--item {
+    display: inline;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    line-height: 2;
+    }
+
+a {
+    text-decoration-line: none;
+    color: #54585a;
+}
+
+.nav--index--list--item a {
+    color: white;
+}
+
+@media all and (min-width:768px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        background:  #099d8d;
+        opacity: 0.95;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .nav--index--list {
+        background: transparent;
+        height: 60px; 
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 14px 45px 16px 0;
+        padding: 0px;
+        font-weight: lighter;
+    }
+    .nav--nav--logo {
+        padding: 0px 0px 0px 15px;
+        background: transparent;
+    }
+    .logo-atlas-mobile {
+        display: none;
+    }
+    .logo-atlas-desktop {
+        display: block;
+        height: 45px;
+        width: auto;
+        padding: 15px 0px 15px 45px;
+    }
+}
+
+/*HERO*/
+
+.hero-image {
+    display: flex;
+    background: url("../images/code.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 421px;
+}
+
+.quote-box {
+    display: flex;
+    position: relative;
+    top: 210px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box-quote {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
+}
+
+@media all and (min-width: 768px) {
+    .quote-box {
+            top: 171px;
+    }
+
+    .quote-box-quote {
+            opacity: 0.8;
+            width: 341px;
+            height: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            left: 76px;    
+            line-height: 25px;
+            text-align: left;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .quote-box {
+            top: 167px;
+    }
+
+    .quote-box-quote {
+            width: 454px;
+            height: 60px;
+            padding-left: 60px;
+            padding-right: 60px;  
+            font-size: 24px;
+            animation: ani-hero 1s ease-out;
+    }
+}
+
+@keyframes ani-hero {
+    from {
+        left: 100vw;
+    }
+
+    to {
+        left: 15vw;
+    }
+}
+
+
+/* TEAM STYLE */
+
+.page-content {
+    padding-top: 1rem;
+}
+
+.team, .str-wea {
+    text-align: center;
+    padding: 2rem;
+}
+
+.str-wea{
+    background-color: #f1f1f1;
+}
+
+.team-title {
+    color: #14d9c4;
+    font-family: 'Rubik', sans-serif;
+    margin: 2rem;
+}
+
+.str-wea--strengths--title {
+    color: #099d8b;
+    font-family: 'Rubik', sans-serif;
+    margin: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.str-wea--strengths, .str-wea--weaknesses {
+    display: block;
+    flex: 50%;
+    padding-bottom: 30px;
+}
+
+.team::after {
+    content: "";
+    position: relative;
+    top: 67px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+
+
+@media all and (min-width:768px){
+    main.team {
+        padding: 30px 70px 30px 70px;
+    }
+    .str-wea{
+        display: flex;
+        /* width: 100%; */
+        flex-direction: row;
+    }
+    .str-wea--strengths, .str-wea--weaknesses, .team {
+        padding: 0 40px;
+    }
+    .team::after {
+        content: "";
+        position: relative;
+        top: 41px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+    }
+}
+
+/*ABOUT US STYLE*/
+
+.about-us{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.about-us--headline-name{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #099d8d;
+    font-family: 'Rubik', sans-serif;
+}
+
+.banner_media-bar{ 
+    /*Barra de redes sociales*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    list-style: none;
+    padding-inline-start: 0;
+    color:  #099d8d;
+    margin-top: -0.3rem;
+    max-width: 124px;
+}
+.link-media-bar{
+    /*Color de los enlaces de la barra de redes*/
+    color: #099d8d;
+    transition: 0.5s ease;
+}
+.social-bar{/*Espaciado entre los items barra redes*/
+    margin: 0.3rem;
+}
+/* .far{
+    transition: 0.5s ease;
+}
+.fab{
+    transition: 0.5s ease;
+}
+.far :hover{
+    color: #14d9c4
+} */
+.link-media-bar :hover{
+    color: #14d9c4
+}
+
+.about-us--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.4rem;
+    justify-items: center;
+}
+.about-us--info--pic{
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 90px;
+    border: 0.19rem solid #b8b8b9;
+    margin-top: 0.5rem;
+}
+.about-us--info--name{
+    color: #14d9c4;
+    text-align: justify;
+}
+.about-us--info--text{
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+.about-us--content{/*Tarjetas*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media all and (min-width:768px) {/*Responsive*/
+    .about-us--info{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .about-us--info--text{
+        text-align: left;
+        line-height: 1.7rem; 
+        width: 100%;
+    }
+    .banner_media-bar{
+        align-self: flex-start;
+        width: 100%;
+    }
+    .about-us--info--pic{
+        max-width: 12.81rem;/*205px*/
+        max-height: 12.81rem;
+        border-radius: 125px;
+        border: 0.19rem solid #b8b8b9;
+        margin: 1rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    .about-us--info--name{
+        align-self: flex-start;
+        width: 100%;
+    }
+}
+
+@media all and (min-width:1200px){
+    .about-us--info--pic{
+        max-width: 15.63rem;/*278px*/
+        max-height: 15.63rem;
+        border-radius: 195px;
+        border: 0.19rem solid #b8b8b9;
+        margin: 1rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: auto;
+        transition: 2s ease;
+    }
+    .about-us--info--pic:hover{
+        transform: translateY(-40px) scale(1.1);
+    }
+    .zigzag :nth-of-type(even) {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+      }
+    .luz{
+        text-align: right;
+    }
+    .maria{
+        align-self: right;
+    }
+}
+
+/* FOOTER STYLE */
+
+.footer {
+    padding: 30px 0 45px 0;
+    border-top: 1px solid #54585a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.footer--copyright{
+    margin: 0 0 20px 0;
+    color: #b8b8b9;
+    font-size: 0.9rem;
+}
+
+.footer--nav {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+.adalab-logo {
+    width: 115.9px;
+    height: 45px;
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        padding: 25px 45px 60px 45px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer--copyright {
+        flex-basis: 45%;
+        margin: 0%;
+        padding: 5px 0 15px 0;
+    }
+
+    .footer--image {
+        margin-top: -57px;
+        flex-basis: 45%;
+    }
+    
+    .footer--nav {
+        text-align: right;
+        line-height: 2rem;
+        flex-basis: 45%;
+        margin: 0%;
+    }
+}
+
+
+/* Fix position of linked content of the navs */
+
+.team-title, .about-us--headline-name {
+    position: relative;
+}
+
+.fix-link-position {
+    position: absolute;
+    top: -8rem;
+}
