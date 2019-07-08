@@ -169,7 +169,7 @@ gulp.task('icons-dist', function(done) {
 
 
 // > Watchers + BrowserSync server
-gulp.task('default', gulp.series(['clean','html', 'styles','scripts', 'images', 'icons'], function(done) {
+gulp.task('default', gulp.series(['clean','html', 'styles', 'images', 'icons'], function(done) {
   browserSync.init({
     server : {
       baseDir: './public/'
@@ -186,7 +186,7 @@ gulp.task('default', gulp.series(['clean','html', 'styles','scripts', 'images', 
 
 
 // > Build a production-ready version of your proyect
-gulp.task('docs', gulp.series(['clean-dist','html-dist','styles-dist','scripts-dist', 'images-dist', 'icons-dist'], function(done) {
+gulp.task('docs', gulp.series(['clean-dist','html-dist','styles-dist', 'images-dist', 'icons-dist'], function(done) {
   console.log('🦄 Build OK!');
   done();
 }));
