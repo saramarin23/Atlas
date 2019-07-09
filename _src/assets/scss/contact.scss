@@ -1,3 +1,7 @@
+@import 'core/settings';
+@import 'core/links';
+@import 'core/header';
+
 * {
     box-sizing: border-box;
 }
@@ -7,47 +11,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
-.nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-.nav--logo {
-    background: #099d8d;
-    height: 60px;
-    opacity: 0.95;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-atlas-mobile {
-    height: 50px;
-    width: auto;
-}
-.logo-atlas-desktop {
-    display: none;
-}
-.nav--index--list {
-    display: flex;
-    background: #14d9c4;
-    height: 45px;
-    opacity: 0.9;
-    
-    font-family:'Rubik', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav--index--list--item {
-    display: inline;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    line-height: 2;
-    }
 
 a {
     text-decoration-line: none;
@@ -153,51 +116,6 @@ textarea:focus,
 
 input::placeholder {
     color: #b8b8b9;
-}
-
-@media all and (min-width:768px) {
-    .nav {
-        display: flex;
-        flex-direction: row;
-        background:  #099d8d;
-        opacity: 0.95;
-        width: 100vw;
-        justify-content: space-between;
-    }
-    .nav--index--list {
-        background: transparent;
-        height: 60px; 
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
-        height: 30px;
-        margin: 14px 45px 16px 0;
-        padding: 0px;
-        font-weight: lighter;
-    }
-    .nav--nav--logo {
-        padding: 0px 0px 0px 15px;
-        background: transparent;
-    }
-    .logo-atlas-mobile {
-        display: none;
-    }
-    .logo-atlas-desktop {
-        display: block;
-        height: 45px;
-        width: auto;
-        padding: 15px 0px 15px 45px;
-    }
-
-    .main {
-        max-width: 442px;
-        margin: 0 auto;
-    }
-
-    .button {
-        width: 206px;
-        align-self: flex-end;
-    }
 }
 
 @media all and (min-width: 1200px) {

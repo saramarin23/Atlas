@@ -1,97 +1,11 @@
-/* @import 'core/settings';
-@import 'core/links';
-
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
-}
- HASTA AQUI LO DE ADALAB*/
  @import 'core/settings';
  @import 'core/links';
+ @import 'core/header';
 
- body {
+.body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    @media all and (min-width:768px) {
-        display: flex;
-        flex-direction: row;
-        background:  #099d8d;
-        opacity: 0.95;
-        width: 100vw;
-        justify-content: space-between;
-    }
-    .nav--logo {
-        background: #099d8d;
-        height: 60px;
-        opacity: 0.95;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media all and (min-width:768px) {
-            padding: 0px 0px 0px 15px;
-            background: transparent;
-        }
-    }
-        .logo-atlas-mobile {
-            height: 50px;
-            width: auto;
-            @media all and (min-width:768px) {
-                display: none;
-            }
-        }
-        .logo-atlas-desktop {
-            display: none;
-            @media all and (min-width:768px) {
-                display: block;
-                height: 45px;
-                width: auto;
-                padding: 15px 0px 15px 45px;
-            }
-        }  
-    .nav--index--list {
-        display: flex;
-        background: #14d9c4;
-        height: 45px;
-        opacity: 0.9;
-        
-        font-family:'Rubik', sans-serif;
-        margin: 0px;
-        padding: 0px;
-        justify-content: space-around;
-        align-items: center;
-        @media all and (min-width:768px) {
-            background: transparent;
-            height: 60px; 
-            display: flex;
-            justify-content: space-between;
-            width: 300px;
-            height: 30px;
-            margin: 14px 45px 16px 0;
-            padding: 0px;
-            font-weight: lighter;
-        }
-    }
-        .nav--index--list--item {
-            display: inline;
-            letter-spacing: normal;
-            text-transform: uppercase;
-            line-height: 2;
-        }
-            .nav--index--list--item a {
-                color: white;
-                text-decoration-line: none;
-            }
-    
 }
 
 
@@ -242,19 +156,18 @@ a {
 }
 
 /*ABOUT US STYLE*/
-
-.about-us{
+.about-us {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.about-us--headline-name{
+.about-us--headline-name {
     font-size: 1.5rem;
     text-align: center;
     color: #099d8d;
-    font-family: 'Rubik', sans-serif;
+    font-family: $titleFont;
 }
 
 .banner_media-bar{ 
@@ -264,13 +177,13 @@ a {
     justify-content: space-around;
     list-style: none;
     padding-inline-start: 0;
-    color:  #099d8d;
+    color: $principalColor;
     margin-top: -0.3rem;
     max-width: 124px;
 }
 .link-media-bar {
     /*Color de los enlaces de la barra de redes*/
-    color: #099d8d;
+    color: $principalColor;
     transition: color 1.5s ease;
 }
 .social-bar{/*Espaciado entre los items barra redes*/
@@ -292,7 +205,7 @@ a {
     margin-top: 0.5rem;
 }
 .about-us--info--name{
-    color: #14d9c4;
+    color: $secondaryColor;
     text-align: justify;
 }
 .about-us--info--text{
@@ -327,7 +240,7 @@ a {
         max-width: 12.81rem;/*205px*/
         max-height: 12.81rem;
         border-radius: 125px;
-        border: 0.19rem solid #b8b8b9;
+        border: 0.19rem solid $sections;
         margin: 1rem;
         margin-right: 2rem;
         width: 100%;
@@ -365,7 +278,7 @@ a {
         align-self: flex-end;
     }
     .link-media-bar:hover{
-        color: #14d9c4;
+        color: $principalColor;
     }
 }
 
