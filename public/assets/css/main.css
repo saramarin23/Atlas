@@ -1,4 +1,4 @@
-/* @import 'core/settings';
+@charset "UTF-8";/* @import 'core/settings';
 @import 'core/links';
 
 body {
@@ -25,7 +25,7 @@ body {
   z-index: 1;
 }
 
-.nav--logo {
+.nav .nav--logo {
   background: #099d8d;
   height: 60px;
   opacity: 0.95;
@@ -40,16 +40,16 @@ body {
   align-items: center;
 }
 
-.logo-atlas-mobile {
+.nav .logo-atlas-mobile {
   height: 50px;
   width: auto;
 }
 
-.logo-atlas-desktop {
+.nav .logo-atlas-desktop {
   display: none;
 }
 
-.nav--index--list {
+.nav .nav--index--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,22 +66,24 @@ body {
   align-items: center;
 }
 
-.nav--index--list--item {
+.nav .nav--index--list--item {
   display: inline;
   letter-spacing: normal;
   text-transform: uppercase;
   line-height: 2;
 }
 
+.nav .nav--index--list--item a {
+  color: white;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
 a {
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   color: #54585a;
-}
-
-.nav--index--list--item a {
-  color: white;
-}/*HERO*/.hero-image {
+}/* No se quén ha añadido esta a. al css, la dejo aquí *//*HERO*/.hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +188,6 @@ a {
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  justify-items: center;
   list-style: none;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -198,23 +199,17 @@ a {
 .link-media-bar {
  /*Color de los enlaces de la barra de redes*/
   color: #099d8d;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.link-media-bar :hover {
+  color: #14d9c4;
 }
 
 .social-bar {
  /*Espaciado entre los items barra redes*/
   margin: 0.3rem;
-}/* .far{
-    transition: 0.5s ease;
-}
-.fab{
-    transition: 0.5s ease;
-}
-.far :hover{
-    color: #14d9c4
-} */.link-media-bar :hover {
-  color: #14d9c4;
 }
 
 .about-us--info {
@@ -328,7 +323,23 @@ a {
     justify-content: space-between;
   }
 
-  .nav--index--list {
+  .nav .nav--logo {
+    padding: 0px 0px 0px 15px;
+    background: transparent;
+  }
+
+  .nav .logo-atlas-mobile {
+    display: none;
+  }
+
+  .nav .logo-atlas-desktop {
+    display: block;
+    height: 45px;
+    width: auto;
+    padding: 15px 0px 15px 45px;
+  }
+
+  .nav .nav--index--list {
     background: transparent;
     height: 60px;
     display: -webkit-box;
@@ -342,22 +353,6 @@ a {
     margin: 14px 45px 16px 0;
     padding: 0px;
     font-weight: lighter;
-  }
-
-  .nav--nav--logo {
-    padding: 0px 0px 0px 15px;
-    background: transparent;
-  }
-
-  .logo-atlas-mobile {
-    display: none;
-  }
-
-  .logo-atlas-desktop {
-    display: block;
-    height: 45px;
-    width: auto;
-    padding: 15px 0px 15px 45px;
   }
 
   .quote-box {
@@ -525,9 +520,9 @@ a {
     text-align: right;
   }
 
-  .maria {
-    -ms-flex-item-align: right;
-    align-self: right;
+  .pos_media-bar {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 }
 
