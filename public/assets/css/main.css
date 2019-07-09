@@ -1,16 +1,4 @@
-@charset "UTF-8";/* @import 'core/settings';
-@import 'core/links';
-
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
-}
- HASTA AQUI LO DE ADALAB*/body {
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  color: #54585a;
-}
+@charset "UTF-8";
 
 .nav {
   display: -webkit-box;
@@ -77,6 +65,12 @@ body {
   color: white;
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
+}
+
+.body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #54585a;
 }
 
 a {
