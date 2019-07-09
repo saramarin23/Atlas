@@ -23,13 +23,20 @@ a {
 
 /* HERO */
 
-.hero {
+.hero-image-contact {
     display: flex;
-    /* position: relative; */
-    justify-content: center;
-    align-items: flex-end;
+    background-image: url("../images/foto-grupo.jpg");
     background-size: cover;
+    width: 100vw;
     height: 421px;
+    background-position: center center;
+}
+
+@media all and (min-width: 1200px) {
+    .hero-image-contact{
+        background-image: url("../images/grupo-desktop.jpg");
+        height: 550px;
+}
 }
 
 /* MAIN */
