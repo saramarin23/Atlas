@@ -19,53 +19,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 1;
-        
-}
-.nav--logo {
-    background: #099d8d;
-    height: 60px;
-    opacity: 0.95;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-atlas-mobile {
-    height: 50px;
-    width: auto;
-}
-.logo-atlas-desktop {
-    display: none;
-}
-.nav--index--list {
-    display: flex;
-    background: #14d9c4;
-    height: 45px;
-    opacity: 0.9;
-    
-    font-family:'Rubik', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav--index--list--item {
-    display: inline;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    line-height: 2;
-    }
-
-a {
-    text-decoration-line: none;
-    color: #54585a;
-}
-
-.nav--index--list--item a {
-    color: white;
-}
-
-@media all and (min-width:768px) {
-    .nav {
+    @media all and (min-width:768px) {
         display: flex;
         flex-direction: row;
         background:  #099d8d;
@@ -73,31 +27,77 @@ a {
         width: 100vw;
         justify-content: space-between;
     }
-    .nav--index--list {
-        background: transparent;
-        height: 60px; 
+    .nav--logo {
+        background: #099d8d;
+        height: 60px;
+        opacity: 0.95;
         display: flex;
-        justify-content: space-between;
-        width: 300px;
-        height: 30px;
-        margin: 14px 45px 16px 0;
-        padding: 0px;
-        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        @media all and (min-width:768px) {
+            padding: 0px 0px 0px 15px;
+            background: transparent;
+        }
     }
-    .nav--nav--logo {
-        padding: 0px 0px 0px 15px;
-        background: transparent;
-    }
-    .logo-atlas-mobile {
-        display: none;
-    }
-    .logo-atlas-desktop {
-        display: block;
+        .logo-atlas-mobile {
+            height: 50px;
+            width: auto;
+            @media all and (min-width:768px) {
+                display: none;
+            }
+        }
+        .logo-atlas-desktop {
+            display: none;
+            @media all and (min-width:768px) {
+                display: block;
+                height: 45px;
+                width: auto;
+                padding: 15px 0px 15px 45px;
+            }
+        }  
+    .nav--index--list {
+        display: flex;
+        background: #14d9c4;
         height: 45px;
-        width: auto;
-        padding: 15px 0px 15px 45px;
+        opacity: 0.9;
+        
+        font-family:'Rubik', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+        align-items: center;
+        @media all and (min-width:768px) {
+            background: transparent;
+            height: 60px; 
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            height: 30px;
+            margin: 14px 45px 16px 0;
+            padding: 0px;
+            font-weight: lighter;
+        }
     }
+        .nav--index--list--item {
+            display: inline;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+            .nav--index--list--item a {
+                color: white;
+                text-decoration-line: none;
+            }
+    
 }
+
+
+a {
+    text-decoration-line: none;
+    color: #54585a;
+}
+
+/* No se quén ha añadido esta a. al css, la dejo aquí */
 
 /*HERO*/
 
