@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    
     @media all and (min-width:768px) {
         display: flex;
         flex-direction: row;
@@ -51,6 +52,7 @@
         padding: 0px;
         justify-content: space-around;
         align-items: center;
+
         @media all and (min-width:768px) {
             background: transparent;
             height: 60px; 
