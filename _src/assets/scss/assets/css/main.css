@@ -1,41 +1,8 @@
-<<<<<<< HEAD
-.footer {
-  padding: 30px 0 45px 0;
-  border-top: 1px solid #54585a;
-  display: grid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
 }
-
-.footer .footer--copyright {
-  margin: 0 0 20px 0;
-  color: #b8b8b9;
-  font-size: 0.9rem;
-}
-
-.footer .footer--nav {
-  text-align: center;
-  margin: 0 0 30px 0;
-  padding: 0%;
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.footer .adalab-logo {
-  width: 115.9px;
-  height: 45px;
-}
-
-=======
->>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,9 +15,8 @@
   position: fixed;
   z-index: 1;
 }
-
-.nav .nav--logo {
-  background: #099d8b;
+.nav--logo {
+  background: #099d8d;
   height: 60px;
   opacity: 0.95;
   display: -webkit-box;
@@ -63,17 +29,14 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
-.nav .logo-atlas-mobile {
+.logo-atlas-mobile {
   height: 50px;
   width: auto;
 }
-
-.nav .logo-atlas-desktop {
+.logo-atlas-desktop {
   display: none;
 }
-
-.nav .nav--index--list {
+.nav--index--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,31 +52,21 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
-.nav .nav--index--list--item {
+.nav--index--list--item {
   display: inline;
   letter-spacing: normal;
   text-transform: uppercase;
   line-height: 2;
 }
-
-.nav .nav--index--list--item a {
-  color: white;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-}
-
-.body {
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  color: #54585a;
-}
-
 a {
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   color: #54585a;
-}/*HERO*/.hero-image {
+}
+.nav--index--list--item a {
+  color: white;
+}
+.hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +75,6 @@ a {
   width: 100vw;
   height: 421px;
 }
-
 .quote-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +89,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .quote-box-quote {
   position: absolute;
   text-align: center;
@@ -146,40 +97,37 @@ a {
   padding: 15px;
   font-size: 18px;
   margin: 0;
-}/* TEAM STYLE */.page-content {
+}
+.page-content {
   padding-top: 1rem;
 }
-
-.team,.str-wea {
+.team,
+.str-wea {
   text-align: center;
   padding: 2rem;
 }
-
 .str-wea {
   background-color: #f1f1f1;
 }
-
 .team-title {
   color: #14d9c4;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 2rem;
 }
-
 .str-wea--strengths--title {
   color: #099d8b;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 15px;
   letter-spacing: 0.1rem;
 }
-
-.str-wea--strengths,.str-wea--weaknesses {
+.str-wea--strengths,
+.str-wea--weaknesses {
   display: block;
   -webkit-box-flex: 50%;
   -ms-flex: 50%;
   flex: 50%;
   padding-bottom: 30px;
 }
-
 .team::after {
   content: "";
   position: relative;
@@ -187,7 +135,8 @@ a {
   border-width: 20px;
   border-style: solid;
   border-color: white transparent transparent transparent;
-}/*ABOUT US STYLE*/.about-us {
+}
+.about-us {
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,16 +148,13 @@ a {
   -ms-flex-line-pack: center;
   align-content: center;
 }
-
 .about-us--headline-name {
   font-size: 1.5rem;
   text-align: center;
   color: #099d8d;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
-
 .banner_media-bar {
- /*Barra de redes sociales*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,6 +164,7 @@ a {
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  justify-items: center;
   list-style: none;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -225,23 +172,17 @@ a {
   margin-top: -0.3rem;
   max-width: 124px;
 }
-
 .link-media-bar {
- /*Color de los enlaces de la barra de redes*/
   color: #099d8d;
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
-
+.social-bar {
+  margin: 0.3rem;
+}
 .link-media-bar :hover {
   color: #14d9c4;
 }
-
-.social-bar {
- /*Espaciado entre los items barra redes*/
-  margin: 0.3rem;
-}
-
 .about-us--info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +197,6 @@ a {
   margin-top: 0.4rem;
   justify-items: center;
 }
-
 .about-us--info--pic {
   width: 11.25rem;
   height: 11.25rem;
@@ -264,12 +204,10 @@ a {
   border: 0.19rem solid #b8b8b9;
   margin-top: 0.5rem;
 }
-
 .about-us--info--name {
   color: #14d9c4;
   text-align: justify;
 }
-
 .about-us--info--text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,9 +216,7 @@ a {
   text-align: center;
   margin-top: -0.5rem;
 }
-
 .about-us--content {
- /*Tarjetas*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +228,8 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-}/* FOOTER STYLE */.footer {
+}
+.footer {
   padding: 30px 0 45px 0;
   border-top: 1px solid #54585a;
   display: -webkit-box;
@@ -309,13 +246,11 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .footer--copyright {
   margin: 0 0 20px 0;
   color: #b8b8b9;
   font-size: 0.9rem;
 }
-
 .footer--nav {
   text-align: center;
   margin: 0 0 30px 0;
@@ -323,58 +258,19 @@ a {
   list-style: none;
   text-transform: uppercase;
 }
-
 .adalab-logo {
   width: 115.9px;
   height: 45px;
-}/* Fix position of linked content of the navs */.team-title,.about-us--headline-name {
+}
+.team-title,
+.about-us--headline-name {
   position: relative;
 }
-
 .fix-link-position {
   position: absolute;
   top: -8rem;
 }
-
 @media all and (min-width: 768px) {
-<<<<<<< HEAD
-  .footer {
-    padding: 25px 45px 60px 45px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
-  .footer .footer--copyright {
-    -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
-    margin: 0%;
-    padding: 5px 0 15px 0;
-  }
-
-  .footer .footer--nav {
-    text-align: right;
-    line-height: 2rem;
-    -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
-    margin: 0%;
-  }
-
-  .footer .footer--image {
-    margin-top: -57px;
-    -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
-  }
-
-=======
->>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,31 +279,14 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    background: #099d8b;
+    background: #099d8d;
     opacity: 0.95;
     width: 100vw;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
-  .nav .nav--logo {
-    padding: 0px 0px 0px 15px;
-    background: transparent;
-  }
-
-  .nav .logo-atlas-mobile {
-    display: none;
-  }
-
-  .nav .logo-atlas-desktop {
-    display: block;
-    height: 45px;
-    width: auto;
-    padding: 15px 0px 15px 45px;
-  }
-
-  .nav .nav--index--list {
+  .nav--index--list {
     background: transparent;
     height: 60px;
     display: -webkit-box;
@@ -422,11 +301,22 @@ a {
     padding: 0px;
     font-weight: lighter;
   }
-
+  .nav--nav--logo {
+    padding: 0px 0px 0px 15px;
+    background: transparent;
+  }
+  .logo-atlas-mobile {
+    display: none;
+  }
+  .logo-atlas-desktop {
+    display: block;
+    height: 45px;
+    width: auto;
+    padding: 15px 0px 15px 45px;
+  }
   .quote-box {
     top: 171px;
   }
-
   .quote-box-quote {
     opacity: 0.8;
     width: 341px;
@@ -437,26 +327,23 @@ a {
     line-height: 25px;
     text-align: left;
   }
-
   main.team {
     padding: 30px 70px 30px 70px;
   }
-
   .str-wea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
- /* width: 100%; */
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
   }
-
-  .str-wea--strengths,.str-wea--weaknesses,.team {
+  .str-wea--strengths,
+  .str-wea--weaknesses,
+  .team {
     padding: 0 40px;
   }
-
   .team::after {
     content: "";
     position: relative;
@@ -464,7 +351,8 @@ a {
     border-width: 20px;
     border-style: solid;
     border-color: white transparent transparent transparent;
-  }/*Responsive*/  .about-us--info {
+  }
+  .about-us--info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -474,22 +362,18 @@ a {
     flex-direction: row;
     width: 100%;
   }
-
   .about-us--info--text {
     text-align: left;
     line-height: 1.7rem;
     width: 100%;
   }
-
   .banner_media-bar {
     -ms-flex-item-align: start;
     align-self: flex-start;
     width: 100%;
   }
-
   .about-us--info--pic {
     max-width: 12.81rem;
- /*205px*/
     max-height: 12.81rem;
     border-radius: 125px;
     border: 0.19rem solid #b8b8b9;
@@ -498,13 +382,11 @@ a {
     width: 100%;
     height: auto;
   }
-
   .about-us--info--name {
     -ms-flex-item-align: start;
     align-self: flex-start;
     width: 100%;
   }
-
   .footer {
     padding: 25px 45px 60px 45px;
     -webkit-box-orient: horizontal;
@@ -518,20 +400,17 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
   }
-
   .footer--copyright {
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
     margin: 0%;
     padding: 5px 0 15px 0;
   }
-
   .footer--image {
     margin-top: -57px;
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
   }
-
   .footer--nav {
     text-align: right;
     line-height: 2rem;
@@ -540,12 +419,10 @@ a {
     margin: 0%;
   }
 }
-
 @media all and (min-width: 1200px) {
   .quote-box {
     top: 167px;
   }
-
   .quote-box-quote {
     width: 454px;
     height: 60px;
@@ -555,10 +432,8 @@ a {
     -webkit-animation: ani-hero 1s ease-out;
     animation: ani-hero 1s ease-out;
   }
-
   .about-us--info--pic {
     max-width: 15.63rem;
- /*278px*/
     max-height: 15.63rem;
     border-radius: 195px;
     border: 0.19rem solid #b8b8b9;
@@ -569,12 +444,10 @@ a {
     -webkit-transition: 2s ease;
     transition: 2s ease;
   }
-
   .about-us--info--pic:hover {
     -webkit-transform: translateY(-40px) scale(1.1);
     transform: translateY(-40px) scale(1.1);
   }
-
   .zigzag :nth-of-type(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -583,35 +456,27 @@ a {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-
   .luz {
     text-align: right;
   }
-
-  .pos_media-bar {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
+  .maria {
+    -ms-flex-item-align: right;
+    align-self: right;
   }
 }
-
 @-webkit-keyframes ani-hero {
   from {
     left: 100vw;
   }
-
   to {
     left: 15vw;
   }
 }
-
 @keyframes ani-hero {
   from {
     left: 100vw;
   }
-
   to {
     left: 15vw;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
