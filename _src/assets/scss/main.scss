@@ -1,5 +1,6 @@
  @import 'core/settings';
  @import 'core/links';
+ @import 'core/footer';
  @import 'core/header';
 
 .body {
@@ -7,7 +8,6 @@
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
-
 
 a {
     text-decoration-line: none;
