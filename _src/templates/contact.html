@@ -31,19 +31,20 @@
             <a href="index.html#about-us">Quienes somos</a>
           </li>
           <li class="nav--index--list--item">
-            <a href="#hero-contact">Contacto</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="hero-image-contact">
+    <div  id="contact" class="hero-image-contact">
     </div>
   </header>
+
   <main class="main">
     <div class="contact">
-      <h1 class="contact--title">Contacto</h1>
-      <p class="contact--description">Para información más detallada, por favor, rellena el siguiente formulario.</p>
-      <small class="contact--instructions">
+      <h1 class="contact__title">Contacto</h1>
+      <p class="contact__description">Para información más detallada, por favor, rellena el siguiente formulario.</p>
+      <small>
         Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.
       </small>
     </div>
@@ -59,8 +60,8 @@
         placeholder="Escribe tu nombre"
         required
       />
-      <div class="form-mail-tel">
-        <div class="form-mail">
+      <div class="form__wrap">
+        <div class="form__wrap__mail">
           <label class="labelform" for="email">
             Email<span class="asterisk"> *</span>
           </label>
@@ -73,7 +74,7 @@
             required
           />
         </div>
-        <div class="form-tel">
+        <div class="form__wrap__tel">
           <label class="labelform labeltel" for="telephone">
             Teléfono
           </label>
@@ -87,10 +88,10 @@
           />
         </div>
       </div>
-      <label class="labelform" for="message">
+      <label class="text-label" for="text-input">
         Mensaje<span class="asterisk"> *</span>
       </label>
-      <textarea name="message" id="message" rows="10" cols="30" placeholder="¿Qué necesitas?"></textarea>
+      <textarea name="text-input" class="text-input" id="text-input" rows="10" cols="30" placeholder="¿Qué necesitas?"></textarea>
       <input class="button" type="submit" value="Enviar"/>
     </form>
   </main>
