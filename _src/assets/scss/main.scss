@@ -61,6 +61,10 @@ a {
 }
 
 @media all and (min-width: 1200px) {
+    .hero-image {
+        height: 550px;
+    }
+    
     .quote-box {
             top: 167px;
     }
