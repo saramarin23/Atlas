@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   padding: 30px 0 45px 0;
   border-top: 1px solid #54585a;
@@ -26,6 +27,37 @@
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   color: #54585a;
+=======
+<<<<<<< HEAD
+.footer {
+  padding: 30px 0 45px 0;
+  border-top: 1px solid #54585a;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .footer--copyright {
+  margin: 0 0 20px 0;
+  color: #b8b8b9;
+  font-size: 0.9rem;
+}
+
+.footer .footer--nav {
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 0%;
+  list-style: none;
+  text-transform: uppercase;
+>>>>>>> ef807eb71a0cd12f15ca553d49f6f746155e9cf7
 }
 
 .footer .adalab-logo {
@@ -33,6 +65,11 @@
   height: 45px;
 }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
+>>>>>>> ef807eb71a0cd12f15ca553d49f6f746155e9cf7
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,6 +371,7 @@ a {
 }
 
 @media all and (min-width: 768px) {
+<<<<<<< HEAD
   .footer {
     padding: 25px 45px 60px 45px;
     display: grid;
@@ -357,6 +395,46 @@ a {
     grid-column: 2;
   }
 
+=======
+<<<<<<< HEAD
+  .footer {
+    padding: 25px 45px 60px 45px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .footer .footer--copyright {
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    margin: 0%;
+    padding: 5px 0 15px 0;
+  }
+
+  .footer .footer--nav {
+    text-align: right;
+    line-height: 2rem;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    margin: 0%;
+  }
+
+  .footer .footer--image {
+    margin-top: -57px;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+  }
+
+=======
+>>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
+>>>>>>> ef807eb71a0cd12f15ca553d49f6f746155e9cf7
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
