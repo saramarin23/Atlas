@@ -14,8 +14,6 @@ a {
     color: #54585a;
 }
 
-/* No se quén ha añadido esta a. al css, la dejo aquí */
-
 /*HERO*/
 
 .hero-image {
@@ -156,18 +154,19 @@ a {
 }
 
 /*ABOUT US STYLE*/
-.about-us {
+
+.about-us{
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.about-us--headline-name {
+.about-us--headline-name{
     font-size: 1.5rem;
     text-align: center;
     color: #099d8d;
-    font-family: $titleFont;
+    font-family: 'Rubik', sans-serif;
 }
 
 .banner_media-bar{ 
@@ -177,14 +176,17 @@ a {
     justify-content: space-around;
     list-style: none;
     padding-inline-start: 0;
-    color: $principalColor;
+    color:  #099d8d;
     margin-top: -0.3rem;
     max-width: 124px;
 }
 .link-media-bar {
     /*Color de los enlaces de la barra de redes*/
-    color: $principalColor;
-    transition: color 1.5s ease;
+    color: #099d8d;
+    transition: 2s ease;
+}
+.link-media-bar :hover{
+    color: #14d9c4;
 }
 .social-bar{/*Espaciado entre los items barra redes*/
     margin: 0.3rem;
@@ -205,7 +207,7 @@ a {
     margin-top: 0.5rem;
 }
 .about-us--info--name{
-    color: $secondaryColor;
+    color: #14d9c4;
     text-align: justify;
 }
 .about-us--info--text{
@@ -240,7 +242,7 @@ a {
         max-width: 12.81rem;/*205px*/
         max-height: 12.81rem;
         border-radius: 125px;
-        border: 0.19rem solid $sections;
+        border: 0.19rem solid #b8b8b9;
         margin: 1rem;
         margin-right: 2rem;
         width: 100%;
@@ -276,9 +278,6 @@ a {
     }
     .pos_media-bar {
         align-self: flex-end;
-    }
-    .link-media-bar:hover{
-        color: $principalColor;
     }
 }
 

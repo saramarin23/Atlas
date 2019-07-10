@@ -7,13 +7,13 @@
     @media all and (min-width:768px) {
         display: flex;
         flex-direction: row;
-        background:  #099d8d;
+        background: $principalColor;
         opacity: 0.95;
         width: 100vw;
         justify-content: space-between;
     }
     .nav--logo {
-        background: #099d8d;
+        background: $principalColor;
         height: 60px;
         opacity: 0.95;
         display: flex;
@@ -42,11 +42,11 @@
         }  
     .nav--index--list {
         display: flex;
-        background: #14d9c4;
+        background: $secondaryColor;
         height: 45px;
         opacity: 0.9;
         
-        font-family:'Rubik', sans-serif;
+        font-family: $titleFont;
         margin: 0px;
         padding: 0px;
         justify-content: space-around;
