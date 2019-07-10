@@ -2,6 +2,9 @@
 @import 'core/links';
 @import 'core/header';
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0px;
@@ -9,7 +12,28 @@ body {
     color: #54585a;
 }
 
+
+/* HERO */
+
+.hero-image-contact {
+    display: flex;
+    background-image: url("../images/foto-grupo.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 421px;
+    background-position: center center;
+}
+
+@media all and (min-width: 1200px) {
+    .hero-image-contact{
+        background-image: url("../images/grupo-desktop.jpg");
+        height: 550px;
+    }
+}
+
 /* MAIN */
+
+
 
 .contact--title {
     color: #099d8d;

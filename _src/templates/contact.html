@@ -9,7 +9,36 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
 </head>
 <body>
-  <partial src="_header.html"></partial>
+  <header>
+    <!-- <partial src="_header.html"></partial> -->
+    <nav class="nav">
+      <div class="nav--logo">
+        <a href="#hero">
+          <img src="assets/images/logo-atlas-mobile.png"
+            class="logo-atlas-mobile"/>
+        </a>
+        <a href="#hero">
+          <img src="assets/images/logo-atlas-desktop.png"
+            class="logo-atlas-desktop"/>
+        </a>
+      </div>
+      <div class="nav--index">
+        <ul class="nav--index--list">
+          <li class="nav--index--list--item">
+            <a href="index.html#team">Equipo</a>
+          </li>
+          <li class="nav--index--list--item">
+            <a href="index.html#about-us">Quienes somos</a>
+          </li>
+          <li class="nav--index--list--item">
+            <a href="#hero-contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero-image-contact">
+    </div>
+  </header>
   <main class="main">
     <div class="contact">
       <h1 class="contact--title">Contacto</h1>
@@ -27,7 +56,7 @@
         type="text"
         id="fullname"
         name="fullname"
-        placeholder="Nombre..."
+        placeholder="Escribe tu nombre"
         required
       />
       <div class="form-mail-tel">
@@ -40,7 +69,7 @@
             type="email"
             id="email"
             name="email"
-            placeholder="nombre.apellidos@mail.com"
+            placeholder="tu_mail@mail.com"
             required
           />
         </div>
