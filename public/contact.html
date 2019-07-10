@@ -1,35 +1,100 @@
-<main class="main">
-    <div class="contact">
-         <h1 class="contact--title">Contacto</h1>
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,500&display=swap"
+        rel="stylesheet">
+        <title>Atlas Contacto</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="nav--logo"> <a href="#hero"><img src="assets/images/logo-atlas-mobile.png" class="logo-atlas-mobile"></a>
 
-        <p class="contact--description">Para información más detallada, por favor, rellena el siguiente formulario.</p>
-        <small
-        class="contact--instructions">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</small>
-    </div>
-    <form class="form" action="/signup" method="post">
-        <label class="labelform" for="fullname">Nombre completo<span class="asterisk"> *</span>
+                    <a
+                    href="#hero">
+                        <img src="assets/images/logo-atlas-desktop.png" class="logo-atlas-desktop">
+                        </a>
+                </div>
+                <div class="nav--index">
+                    <ul class="nav--index--list">
+                        <li class="nav--index--list--item"> <a href="#team">Equipo</a>
 
-        </label>
-        <input class="input" type="text" id="fullname" name="fullname" placeholder="Nombre..."
-        required />
-        <div class="form-mail-tel">
-            <div class="form-mail">
-                <label class="labelform" for="email">Email<span class="asterisk"> *</span>
+                        </li>
+                        <li class="nav--index--list--item"> <a href="#about-us">Quienes somos</a>
+
+                        </li>
+                        <li class="nav--index--list--item"> <a href="./../contact_us.html">Contacto</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-image">
+                <div class="quote-box">
+                    <p class="quote-box-quote"><strong><em>"Cuando alcances la cima, sigue escalando". </em>- Proverbio japonés</strong>
+
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="contact">
+                 <h1 class="contact--title">Contacto</h1>
+
+                <p class="contact--description">Para información más detallada, por favor, rellena el siguiente formulario.</p>
+                <small
+                class="contact--instructions">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</small>
+            </div>
+            <form class="form" action="/signup" method="post">
+                <label class="labelform" for="fullname">Nombre completo<span class="asterisk"> *</span>
 
                 </label>
-                <input class="input" type="email" id="email" name="email" placeholder="nombre.apellidos@mail.com"
+                <input class="input" type="text" id="fullname" name="fullname" placeholder="Nombre..."
                 required />
-            </div>
-            <div class="form-tel">
-                <label class="labelform labeltel" for="telephone">Teléfono</label>
-                <input class="input" type="tel" id="telephone" name="telephone"
-                placeholder="999999999" pattern="^[9,6][0-9]{1,2}[0-9]{6}$" />
-            </div>
-        </div>
-        <label class="labelform" for="message">Mensaje<span class="asterisk"> *</span>
+                <div class="form-mail-tel">
+                    <div class="form-mail">
+                        <label class="labelform" for="email">Email<span class="asterisk"> *</span>
 
-        </label>
-        <textarea name="message" id="message" rows="10" cols="30" placeholder="¿Qué necesitas?"></textarea>
-        <input class="button" type="submit" value="Enviar" />
-    </form>
-</main>
+                        </label>
+                        <input class="input" type="email" id="email" name="email" placeholder="nombre.apellidos@mail.com"
+                        required />
+                    </div>
+                    <div class="form-tel">
+                        <label class="labelform labeltel" for="telephone">Teléfono</label>
+                        <input class="input" type="tel" id="telephone" name="telephone"
+                        placeholder="999999999" pattern="^[9,6][0-9]{1,2}[0-9]{6}$" />
+                    </div>
+                </div>
+                <label class="labelform" for="message">Mensaje<span class="asterisk"> *</span>
+
+                </label>
+                <textarea name="message" id="message" rows="10" cols="30" placeholder="¿Qué necesitas?"></textarea>
+                <input class="button" type="submit" value="Enviar" />
+            </form>
+        </main>
+        <footer class="footer">
+            <p class="footer--copyright">&lt;A&gt;tlas &copy; 2019</p>
+            <ul class="footer--nav">
+                <li> <a href="#team">Equipo</a>
+
+                </li>
+                <li> <a href="#about-us">Quiénes somos</a>
+
+                </li>
+                <li> <a href="#contacto">Contacto</a>
+
+                </li>
+            </ul>
+            <div class="footer--image">
+                <img class="adalab-logo" src="../assets/images/logo-adalab-80px.png" alt="Gracias por visitar el sitio de Adalab">
+            </div>
+        </footer>
+    </body>
+
+</html>
