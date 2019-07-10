@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-.footer {
-  padding: 30px 0 45px 0;
-  border-top: 1px solid #54585a;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-}
-
-.footer .footer--copyright {
-  margin: 5px 0 15px 0;
-  color: #b8b8b9;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-.footer .footer--nav {
-  padding: 20px 0 30px 0;
-  text-align: center;
-  text-transform: uppercase;
-  list-style: none;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  line-height: 1.5rem;
-}
-
-.footer .footer--nav a {
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  color: #54585a;
-}
-
-.footer .adalab-logo {
-  width: 115.9px;
-  height: 45px;
-}
-
-=======
->>>>>>> d56371a849440a1247ec93286247bb895a0ad631
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,32 +334,6 @@ a {
 }
 
 @media all and (min-width: 768px) {
-<<<<<<< HEAD
-  .footer {
-    padding: 25px 45px 60px 45px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    text-align: start;
-  }
-
-  .footer .footer--copyright {
-    margin: 5px 0 15px 0;
-  }
-
-  .footer .footer--nav {
-    padding: 0;
-    text-align: right;
-    line-height: 1.5rem;
-    grid-row: 1/3;
-    grid-column: 2;
-  }
-
-=======
->>>>>>> d56371a849440a1247ec93286247bb895a0ad631
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
