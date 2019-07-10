@@ -1,13 +1,11 @@
- @import 'core/settings';
- @import 'core/links';
- @import 'core/header';
+@import 'core/settings';
+@import 'core/header';
 
 .body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     color: #54585a;
 }
-
 
 a {
     text-decoration-line: none;

@@ -1,3 +1,9 @@
+.body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #54585a;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +18,7 @@
 }
 
 .nav .nav--logo {
-  background: #099d8d;
+  background: #099d8b;
   height: 60px;
   opacity: 0.95;
   display: -webkit-box;
@@ -42,7 +48,7 @@
   background: #14d9c4;
   height: 45px;
   opacity: 0.9;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 0px;
   padding: 0px;
   -ms-flex-pack: distribute;
@@ -63,12 +69,6 @@
   color: white;
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
-}
-
-.body {
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  color: #54585a;
 }
 
 a {
@@ -307,7 +307,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    background: #099d8d;
+    background: #099d8b;
     opacity: 0.95;
     width: 100vw;
     -webkit-box-pack: justify;
