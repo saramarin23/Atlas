@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   padding: 30px 0 45px 0;
   border-top: 1px solid #54585a;
@@ -33,6 +34,8 @@
   height: 45px;
 }
 
+=======
+>>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,6 +337,7 @@ a {
 }
 
 @media all and (min-width: 768px) {
+<<<<<<< HEAD
   .footer {
     padding: 25px 45px 60px 45px;
     -webkit-box-orient: horizontal;
@@ -369,6 +373,8 @@ a {
     flex-basis: 45%;
   }
 
+=======
+>>>>>>> 5826278639b48712138e1b75dea59e27c89cd0cd
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
