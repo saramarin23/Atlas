@@ -1,0 +1,56 @@
+// FOOTER STYLE
+
+.footer {
+    padding: 30px 0 45px 0;
+    border-top: 1px solid $textColor;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media all and (min-width: 768px) {
+        padding: 25px 45px 60px 45px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer--copyright{
+        margin: 0 0 20px 0;
+        color: $strWeaBackgroundColor;
+        font-size: 0.9rem;
+
+        @media all and (min-width: 768px) {
+            flex-basis: 45%;
+            margin: 0%;
+            padding: 5px 0 15px 0;
+        }
+    }
+    
+    .footer--nav {
+        text-align: center;
+        margin: 0 0 30px 0;
+        padding: 0%;
+        list-style: none;
+        text-transform: uppercase;
+
+        @media all and (min-width: 768px) {
+            text-align: right;
+            line-height: 2rem;
+            flex-basis: 45%;
+            margin: 0%;
+        }
+    }
+
+    .adalab-logo {
+        width: 115.9px;
+        height: 45px;
+    }
+
+    .footer--image {
+        @media all and (min-width: 768px) {
+            margin-top: -57px;
+            flex-basis: 45%;
+        }
+    }
+}
