@@ -1,7 +1,45 @@
 @import 'core/settings';
 @import 'core/links';
 @import 'core/header';
-@import 'core/footer';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+}
+
+a {
+    text-decoration-line: none;
+    color: #54585a; 
+}
+
+.nav--index--list--item a {
+    color: white;
+}
+
+/* HERO */
+
+.hero-image-contact {
+    display: flex;
+    background-image: url("../images/foto-grupo.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 421px;
+    background-position: center center;
+}
+
+@media all and (min-width: 1200px) {
+    .hero-image-contact{
+        background-image: url("../images/grupo-desktop.jpg");
+        height: 550px;
+}
+}
+
+/* MAIN */
 
 .contact--title {
     color: #099d8d;
@@ -109,5 +147,62 @@ input::placeholder {
         display: flex;
         flex-direction: column;
         width: 162px;
+    }
+}
+/* FOOTER STYLE */
+
+.footer {
+    padding: 30px 0 45px 0;
+    border-top: 1px solid #54585a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.footer--copyright{
+    margin: 0 0 20px 0;
+    color: #b8b8b9;
+    font-size: 0.9rem;
+}
+
+.footer--nav {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+.adalab-logo {
+    width: 115.9px;
+    height: 45px;
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        padding: 25px 45px 60px 45px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer--copyright {
+        flex-basis: 45%;
+        margin: 0%;
+        padding: 5px 0 15px 0;
+    }
+
+    .footer--image {
+        margin-top: -57px;
+        flex-basis: 45%;
+    }
+    
+    .footer--nav {
+        text-align: right;
+        line-height: 2rem;
+        flex-basis: 45%;
+        margin: 0%;
     }
 }
