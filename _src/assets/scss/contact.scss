@@ -1,17 +1,10 @@
-
-@import 'core/settings';
+@import 'core/variables';
 @import 'core/links';
 @import 'core/header';
-
-* {
-    box-sizing: border-box;
-}
-
 
 body {
     margin: 0px;   
 }
-
 
 /* HERO */
 
@@ -38,6 +31,10 @@ body {
 /* MAIN */
 
 .main {
+    * {
+        box-sizing: border-box;
+    }
+
     font-family: $textFont;
     color: $textColor;
     padding: 30px 15px 60px 15px;
@@ -136,6 +133,9 @@ body {
             border: none;
             border-radius: 5px;
             width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1rem;
 
             @media all and (min-width: 768px) {
                 max-width: 206px;
