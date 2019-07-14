@@ -7,89 +7,92 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,500&display=swap"
         rel="stylesheet">
-        <link href="./assets/icons/css/all.css" rel="stylesheet">
         <title>Atlas Contacto</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
     </head>
     
     <body>
         <header>
-            <nav class="nav">
-                <div class="nav--logo"> <a href="#hero"><img src="assets/images/logo-atlas-mobile.png" class="logo-atlas-mobile"></a>
+            <header>
+                <nav class="nav">
+                    <div class="nav--logo"> <a href="index.html#hero"><img src="assets/images/logo-atlas-mobile.png" class="logo-atlas-mobile"></a>
 
-                    <a
-                    href="#hero">
-                        <img src="assets/images/logo-atlas-desktop.png" class="logo-atlas-desktop">
-                        </a>
-                </div>
-                <div class="nav--index">
-                    <ul class="nav--index--list">
-                        <li class="nav--index--list--item"> <a href="https://saramarin23.github.io/Atlas/#team">Equipo</a>
+                        <a
+                        href="index.html#hero">
+                            <img src="assets/images/logo-atlas-desktop.png" class="logo-atlas-desktop">
+                            </a>
+                    </div>
+                    <div class="nav--index">
+                        <ul class="nav--index--list">
+                            <li class="nav--index--list--item"> <a href="index.html#team">Equipo</a>
 
-                        </li>
-                        <li class="nav--index--list--item"> <a href="https://saramarin23.github.io/Atlas/#about-us">Quienes somos</a>
+                            </li>
+                            <li class="nav--index--list--item"> <a href="index.html#about-us">Quienes somos</a>
 
-                        </li>
-                        <li class="nav--index--list--item"> <a href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav--index--list--item"> <a href="contact.html">Contacto</a>
 
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div id="contact" class="hero-image-contact"></div>
         </header>
-        <div class="hero-image-contact"></div>
-        </div>
         <main class="main">
             <div class="contact">
-                 <h1 class="contact--title">Contacto</h1>
+                 <h1 class="contact__title">Contacto</h1>
 
-                <p class="contact--description">Para información más detallada, por favor, rellena el siguiente formulario.</p>
-                <small
-                class="contact--instructions">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</small>
+                <p class="contact__description">Para información más detallada, por favor, rellena el siguiente formulario.</p> <small>
+        Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.
+      </small>
+
             </div>
-            <form class="form" action="https://formspree.io/saramarin.econ@gmail.com"
-            method="post">
+            <form class="form" action="/signup" method="post">
                 <label class="labelform" for="fullname">Nombre completo<span class="asterisk"> *</span>
 
                 </label>
-                <input class="input" type="text" id="fullname" name="fullname" placeholder="Nombre..."
+                <input class="input" type="text" id="fullname" name="fullname" placeholder="Escribe tu nombre"
                 required />
-                <div class="form-mail-tel">
-                    <div class="form-mail">
+                <div class="form__wrap">
+                    <div class="form__wrap__mail">
                         <label class="labelform" for="email">Email<span class="asterisk"> *</span>
 
                         </label>
-                        <input class="input" type="email" id="email" name="email" placeholder="nombre.apellidos@mail.com"
+                        <input class="input" type="email" id="email" name="email" placeholder="tu_mail@mail.com"
                         required />
                     </div>
-                    <div class="form-tel">
+                    <div class="form__wrap__tel">
                         <label class="labelform labeltel" for="telephone">Teléfono</label>
                         <input class="input" type="tel" id="telephone" name="telephone"
                         placeholder="999999999" pattern="^[9,6][0-9]{1,2}[0-9]{6}$" />
                     </div>
                 </div>
-                <label class="labelform" for="message">Mensaje<span class="asterisk"> *</span>
+                <label class="text-label" for="text-input">Mensaje<span class="asterisk"> *</span>
 
                 </label>
-                <textarea name="message" id="message" rows="10" cols="30" placeholder="¿Qué necesitas?"></textarea>
+                <textarea name="text-input" class="text-input" id="text-input" rows="10"
+                cols="30" placeholder="¿Qué necesitas?"></textarea>
                 <input class="button" type="submit" value="Enviar" />
             </form>
         </main>
         <footer class="footer">
             <p class="footer--copyright">&lt;A&gt;tlas &copy; 2019</p>
             <ul class="footer--nav">
-                <li> <a href="https://saramarin23.github.io/Atlas/#team">Equipo</a>
+                <li> <a href="index.html#team">Equipo</a>
 
                 </li>
-                <li> <a href="https://saramarin23.github.io/Atlas/#about-us">Quiénes somos</a>
+                <li> <a href="index.html#about-us">Quiénes somos</a>
 
                 </li>
                 <li> <a href="contact.html">Contacto</a>
 
                 </li>
             </ul>
-            <div class="footer--image">
-                <img class="adalab-logo" src="../assets/images/logo-adalab-80px.png" alt="Gracias por visitar el sitio de Adalab">
+            <div class="footer--image"> <a href="index.html#logo"></a>
+
+                <img class="adalab-logo" src="../assets/images/logo-adalab-80px.png"
+                alt="Gracias por visitar el sitio de Adalab">
             </div>
         </footer>
     </body>
