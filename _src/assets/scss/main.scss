@@ -94,26 +94,33 @@ a {
     padding-top: 1rem;
 }
 
-.team, .str-wea {
+.team {
     text-align: center;
-    padding: 2rem;
+    padding: 50px $mobileMarginsX 30px $mobileMarginsX;
 }
 
 .str-wea{
     background-color: #f1f1f1;
+    padding: 30px $mobileMarginsX 15px $mobileMarginsX;
+    text-align: center;
+    
 }
 
 .team-title {
     color: #14d9c4;
     font-family: 'Rubik', sans-serif;
-    margin: 2rem;
+    margin: 0 0 1rem 0;
 }
 
 .str-wea--strengths--title {
     color: #099d8b;
     font-family: 'Rubik', sans-serif;
-    margin: 15px;
+    margin: 1rem;
     letter-spacing: 0.1rem;
+}
+
+.atlas-text {
+    margin: 1rem 0 0 0;
 }
 
 .str-wea--strengths, .str-wea--weaknesses {
@@ -131,19 +138,23 @@ a {
     border-color: white transparent transparent transparent;
 }
 
-
-
 @media all and (min-width:768px){
-    main.team {
-        padding: 30px 70px 30px 70px;
+    .team {
+        padding: 45px $tabletMarginsX 60px $tabletMarginsX;
     }
+
     .str-wea{
         display: flex;
-        /* width: 100%; */
         flex-direction: row;
+        justify-content: space-between;
+        padding: 30px $tabletMarginsX 60px $mobileMarginsX;
     }
     .str-wea--strengths, .str-wea--weaknesses, .team {
-        padding: 0 40px;
+        padding: 0;
+    }
+
+    .str-wea--strengths, .str-wea--weaknesses {
+        max-width: 324px;
     }
     .team::after {
         content: "";
@@ -155,10 +166,26 @@ a {
     }
 }
 
+@media all and (min-width: 1200px) {
+    .team {
+        max-width: 601px;
+        margin: auto;
+        padding: 45px 0 60px 0;
+    }
+
+    .str-wea--strengths, .str-wea--weaknesses {
+        max-width: 440px;
+    }
+
+    .str-wea {
+        padding: 45px 135px 60px 135px;
+    }
+}
+
 /*ABOUT US STYLE*/
 
 .about-us{
-    padding: 2rem;
+    padding: 30px $mobileMarginsX 45px $mobileMarginsX;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -169,6 +196,7 @@ a {
     text-align: center;
     color: #099d8d;
     font-family: 'Rubik', sans-serif;
+    margin-bottom: 30px;
 }
 
 .banner_media-bar{ 
@@ -198,7 +226,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.4rem;
+    margin: 0.4rem 0 1rem;
     justify-items: center;
 }
 .about-us--info--pic{
@@ -206,7 +234,6 @@ a {
     height: 11.25rem;
     border-radius: 90px;
     border: 0.19rem solid #b8b8b9;
-    margin-top: 0.5rem;
 }
 .about-us--info--name{
     color: #14d9c4;
@@ -226,6 +253,10 @@ a {
 }
 
 @media all and (min-width:768px) {/*Responsive*/
+    .about-us {
+        padding: 45px $tabletMarginsX;
+    }
+
     .about-us--info{
         display: flex;
         flex-direction: row;
@@ -254,9 +285,24 @@ a {
         align-self: flex-start;
         width: 100%;
     }
+
+    .zigzag :nth-of-type(even) {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+      }
+    .luz{
+        text-align: right;
+    }
+    .pos_media-bar {
+        align-self: flex-end;
+    }
 }
 
 @media all and (min-width:1200px){
+    .about-us {
+        padding: 45px 135px 60px 135px;
+    }
+
     .about-us--info--pic{
         max-width: 15.63rem;/*278px*/
         max-height: 15.63rem;
@@ -274,7 +320,7 @@ a {
     .zigzag :nth-of-type(even) {
         flex-direction: row-reverse;
         flex-wrap: nowrap;
-      }
+    }
     .luz{
         text-align: right;
     }
