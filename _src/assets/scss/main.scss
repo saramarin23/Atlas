@@ -138,31 +138,31 @@ a {
     border-color: white transparent transparent transparent;
 }
 
-@media all and (min-width:768px){
+@media all and (min-width: 768px){
     .team {
-        padding: 45px $tabletMarginsX 60px $tabletMarginsX;
+        margin: 30px $tabletMarginsX 60px $tabletMarginsX;
+        padding: 0;
     }
 
     .str-wea{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 30px $tabletMarginsX 60px $mobileMarginsX;
+        padding: 30px $tabletMarginsX 60px $tabletMarginsX;
     }
-    .str-wea--strengths, .str-wea--weaknesses, .team {
+    
+    .str-wea--strengths, .str-wea--weaknesses {
+        width: 324px;
         padding: 0;
     }
 
-    .str-wea--strengths, .str-wea--weaknesses {
-        max-width: 324px;
+    .str-wea--strengths {
+        padding-right: 30px;
     }
+
     .team::after {
-        content: "";
-        position: relative;
-        top: 41px;
-        border-width: 20px;
-        border-style: solid;
-        border-color: white transparent transparent transparent;
+        top: 102px;
+        
     }
 }
 
